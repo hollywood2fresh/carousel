@@ -1,0 +1,202 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+#carousel {
+  overflow: hidden;
+}
+#carousel .carousel {
+  display: flex;
+  justify-content: center;
+  height: 370px;
+  margin: 50px 0 0;
+}
+#carousel .carousel--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#carousel .carousel--list--item {
+  position: absolute;
+}
+#carousel .carousel--list--item--picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#carousel .carousel--list--item .animationHidenOpacity {
+  opacity: 0;
+}
+#carousel .carousel--list--item .animationOpacity {
+  opacity: 0.5;
+}
+#carousel .carousel .prevHiden {
+  right: 570px;
+}
+#carousel .carousel .prev {
+  right: 270px;
+}
+#carousel .carousel .active {
+  width: 500px;
+  height: 350px;
+}
+#carousel .carousel .next {
+  left: 270px;
+}
+#carousel .carousel .nextHiden {
+  left: 570px;
+}
+#carousel .carousel .next, #carousel .carousel .prev {
+  width: 257px;
+  height: 180px;
+  cursor: pointer;
+}
+#carousel .carousel .nextHiden, #carousel .carousel .prevHiden {
+  width: 143px;
+  height: 100px;
+}
+#carousel .carousel .animationPrevPrevHiden {
+  transition: all 500ms ease-in-out;
+  transform: translateX(243px) scale(1.8);
+  opacity: 0.5;
+}
+#carousel .carousel .animationPrevPrev {
+  transition: all 500ms ease-in-out;
+  transform: translateX(399px) scale(1.945);
+  opacity: 1;
+}
+#carousel .carousel .animationPrevActive {
+  transition: all 500ms ease-in-out;
+  transform: translateX(399px) scale(0.513);
+  opacity: 0.5;
+}
+#carousel .carousel .animationPrevNext {
+  transition: all 500ms ease-in-out;
+  transform: translateX(205px) scale(0.85);
+  opacity: 0;
+}
+#carousel .carousel .animationPrevNextHiden {
+  transition: all 500ms ease-in-out;
+  transform: translateX(205px) scale(0.85);
+}
+#carousel .carousel .animationNextPrevHiden {
+  transition: all 500ms ease-in-out;
+  transform: translateX(-205px) scale(0.85);
+}
+#carousel .carousel .animationNextPrev {
+  transition: all 500ms ease-in-out;
+  transform: translateX(-205px) scale(0.85);
+  opacity: 0;
+}
+#carousel .carousel .animationNextActive {
+  transition: all 500ms ease-in-out;
+  transform: translateX(-398px) scale(0.515);
+  opacity: 0.5;
+}
+#carousel .carousel .animationNextNext {
+  transition: all 500ms ease-in-out;
+  transform: translateX(-399px) scale(1.945);
+  opacity: 1;
+}
+#carousel .carousel .animationNextNextHiden {
+  transition: all 500ms ease-in-out;
+  transform: translateX(-243px) scale(1.8);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1070px) {
+  #carousel .carouselContent--list--item .animationOpacity {
+    opacity: 0;
+  }
+  #carousel .carouselContent .animationPrevPrevHiden {
+    transition: all 500ms ease-in-out;
+    transform: translateX(243px) scale(1.8);
+    opacity: 0;
+  }
+  #carousel .carouselContent .animationPrevPrev {
+    transition: all 500ms ease-in-out;
+    transform: translateX(399px) scale(1.945);
+    opacity: 1;
+  }
+  #carousel .carouselContent .animationPrevActive {
+    transition: all 500ms ease-in-out;
+    transform: translateX(399px) scale(0.513);
+    opacity: 0;
+  }
+  #carousel .carouselContent .animationPrevNext {
+    transition: all 500ms ease-in-out;
+    transform: translateX(205px) scale(0.85);
+    opacity: 0;
+  }
+  #carousel .carouselContent .animationPrevNextHiden {
+    transition: all 500ms ease-in-out;
+    transform: translateX(205px) scale(0.85);
+  }
+  #carousel .carouselContent .animationNextPrevHiden {
+    transition: all 500ms ease-in-out;
+    transform: translateX(-205px) scale(0.85);
+  }
+  #carousel .carouselContent .animationNextPrev {
+    transition: all 500ms ease-in-out;
+    transform: translateX(-205px) scale(0.85);
+    opacity: 0;
+  }
+  #carousel .carouselContent .animationNextActive {
+    transition: all 500ms ease-in-out;
+    transform: translateX(-398px) scale(0.515);
+    opacity: 0;
+  }
+  #carousel .carouselContent .animationNextNext {
+    transition: all 500ms ease-in-out;
+    transform: translateX(-399px) scale(1.945);
+    opacity: 1;
+  }
+  #carousel .carouselContent .animationNextNextHiden {
+    transition: all 500ms ease-in-out;
+    transform: translateX(-243px) scale(1.8);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=App.css.map */
